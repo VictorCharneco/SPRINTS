@@ -26,11 +26,39 @@ echo "El doble de X és: " . ($var_X * 2) . "\nEl doble de Y és: " . ($var_Y * 
 ") és: " . $resultatMulti . "\n";;
 
 // (B)
-// TODO
-// function opAritmetica($nombre1, $nombre2,)
-function opAritmetica (){
+function opAritmetica ($primerNum, $segonNum, $operador){
+    $tipusOperacio = 0;
 
+    switch(strtolower($operador)){
+        case "suma":
+            $resultat = $primerNum + $segonNum;
+            echo "El resultat és: " . $resultat;
+            break;
+        case "resta":
+            $resultat = $primerNum - $segonNum;
+            echo "El resultat és: " . $resultat;
+            break;
+        case "multiplica":
+            $resultat = $primerNum * $segonNum;
+            echo "El resultat és: " . $resultat;
+            break;
+        case "divideix":
+            $resultat = $primerNum / $segonNum;
+            echo "El resultat és: " . $resultat;
+            break;
+        default :
+            $resultat = "Error. Selecciona una opció: suma / resta / multiplica / divideix.";
+    }
+    return $resultat;
 }
+echo "---------------------------- \n";
+opAritmetica(5,2,"suma");
+echo "\n";
+opAritmetica(5,2,"resta");
+echo "\n";
+opAritmetica(5,2,"multiplica");
+echo "\n";
+opAritmetica(5,2,"divideix");
 
 
 
