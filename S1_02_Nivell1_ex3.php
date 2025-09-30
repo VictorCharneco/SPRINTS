@@ -5,6 +5,8 @@ $var_X = 2;
 $var_Y = 4;
 $var_N = 9;
 $var_M = 3;
+$resultatSumaTotal = $var_X + $var_Y + $var_M + $var_N;
+$resultatMulti = $var_X * $var_Y * $var_M * $var_N;
 
 echo "Valor de X és: " . $var_X . "\n" . "Valor de Y és: " . $var_Y . "\n" . 
 "La suma de X i Y és: " . ($var_X + $var_Y) . "\n" . "La resta de X i Y és: " . ($var_X - $var_Y) . "\n" .
@@ -18,10 +20,17 @@ echo "Valor de N és: " . $var_N . "\n" . "Valor de M és: " . $var_M . "\n" . "
 
 echo "---------------------------- \n";
 
+echo "El doble de X és: " . ($var_X * 2) . "\nEl doble de Y és: " . ($var_Y * 2) . "\nEl doble de N és: " . ($var_N * 2) .
+"\nEl doble de M és: " . ($var_M * 2) . "\nLa suma de totes les variables (" . $var_X . "+" . $var_Y . "+" . $var_M . "+" . $var_N .
+") és: " . $resultatSumaTotal . "\nEl producte de totes les variables (" . $var_X . "+" . $var_Y . "+" . $var_M . "+" . $var_N .
+") és: " . $resultatMulti . "\n";;
+
 // (B)
-// Crea un programa que tingui una funció que rebi dos nombres per paràmetre, i en un tercer paràmetre que indiqui 
-// una operació aritmética(suma,resta,multiplicació o divisió dels dos nombres).
-// Pensa en tots els casos possibles que ha de tenir aquest programa abans de fer-lo!
+// TODO
+// function opAritmetica($nombre1, $nombre2,)
+function opAritmetica (){
+
+}
 
 
 
