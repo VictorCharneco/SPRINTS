@@ -1,0 +1,6 @@
+<?php
+$salutacio = "Hello world";
+
+
+
+?>
