@@ -1,6 +1,0 @@
-<?php
-$salutacio = "Hello world";
-
-
-
-?>
