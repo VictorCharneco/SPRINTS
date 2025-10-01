@@ -1,18 +1,5 @@
 <?php
 
-/*
-Imagina que estàs programant part de la lògica de la classificació de punts d'un joc. 
-En aquest programa necessitem entrar 3 puntuacions diferents(les puntuacions són entre 0 i 9999). 
-D'aquestes puntuacions necessitarem:
-
-    La seva suma
-    La seva mitjana
-    La classificació. Sent  "Principiant" menor de 4000. 
-                            "Intermedi" menor de 8000 
-                            "Professional" la resta.
-Pensa a fer més d'una funció per resoldre aquest problema.
-*/
-
 const PUNTUACIONS = 3;
 
 function calculSuma($puntU, $puntDos, $puntTres){
