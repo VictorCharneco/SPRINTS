@@ -11,6 +11,4 @@ if(isBitten()){
     echo "Uiii! Encara tens dit!";
 }
 
-
-
 ?>
