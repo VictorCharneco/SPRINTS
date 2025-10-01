@@ -1,8 +1,5 @@
 <?php
 
-// CAda trucada que duri menys de 3 minuts té un cost de 10 centims
-// Cada minut adicional a partir dels 3 primers és un pas de compatador i costa 5 cntms
-
 function costTrucada($duracio){
 $minGratis = 3;
 $calcul = ($duracio - $minGratis) * 0.5;
