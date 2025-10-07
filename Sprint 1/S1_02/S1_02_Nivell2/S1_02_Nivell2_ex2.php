@@ -1,13 +1,18 @@
 <?php
 
-const PUNTUACIONS = 3;
+define("PUNTUACIONS", 3);
 
-function calculSuma($puntU, $puntDos, $puntTres){
-    return $puntU + $puntDos + $puntTres;
+function calculSuma(array $punts){
+    return array_sum($punts);
 }
 
-function calculMitjana($calculSuma){
-    return $calculSuma / PUNTUACIONS;
+function calculMitjana(array $punts){
+    $total = count($punts);
+    if($total === 0){
+        return 0;
+    }else{
+        return array_sum($punts) / $total;
+    }
 }
 
 function puntsClassificacio($calculMitjana){
@@ -20,15 +25,14 @@ function puntsClassificacio($calculMitjana){
     }
 }
 
-$puntU = 2300;
-$puntDos = 150;
-$puntTres = 4633;
+$punts = [2300, 100, 4633];
 
-$suma = calculSuma($puntU, $puntDos, $puntTres);
-$mitjana = calculMitjana($suma);
+$suma = calculSuma($punts);
+$mitjana = calculMitjana($punts);
 $classificacio = puntsClassificacio($mitjana);
 
-echo "Els teus punts (" . $puntU . " - " . $puntDos . " - " . $puntTres . ")" . " fan un total de: " . 
-$suma . ".\nLa mitjana és de " . $mitjana . " punts i per tant, ets a la Categoria " . $classificacio . "."
+echo "Els teus punts son: " . implode (", ", $punts) . "\n";
+echo "El total de punts és: $suma \n"; 
+echo "La mitjana és de " . $mitjana . " punts i per tant, ets a la Categoria " . $classificacio . "."
 
 ?>
