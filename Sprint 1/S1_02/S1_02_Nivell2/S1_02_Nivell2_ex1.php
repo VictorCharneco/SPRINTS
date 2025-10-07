@@ -1,9 +1,10 @@
 <?php
 
-const MIN_GRATIS = 3;
+define("MIN_GRATIS", 3);
+define("COST_MINUT", 0.5);
 
 function costTrucada($duracio){
-$calcul = ($duracio - MIN_GRATIS) * 0.5;
+$calcul = ($duracio - MIN_GRATIS) * COST_MINUT;
 
     if($duracio <= 0){
         return "/!\ ERROR. Indica els minuts de la trucada.";
